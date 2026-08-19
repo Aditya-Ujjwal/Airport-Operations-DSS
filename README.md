@@ -68,11 +68,6 @@ The project uses a structured airport operations dataset covering **October 2024
 | `Staff_Shifts` | Staff departments, roles, shifts, hours, terminal allocation and overtime |
 | `Maintenance_Logs` | Maintenance work, duration, severity, completion and inspection information |
 
-> **Note:** `Retail_Transactions` was part of the database preparation pipeline, but it was excluded from the final dashboard analysis because the available retail data was not considered reliable enough for meaningful business insights.
-
-### Dataset Files
-
-![Dataset Files](assets/dataset_files.png)
 
 ---
 
@@ -93,11 +88,8 @@ Cleaned and validated each operational dataset, including passenger scores, time
 Loaded transformed and cleaned records from staging/raw structures into the final operational tables.
 
 ### 5. Relationships
-Created relationships using common identifiers such as:
-
-- `flight_number`
-- `passport_number`
-- `staff_id`
+No Relationships were created due to lack of unique identifiers.
+Indexes were created to have faster data retreival.
 
 ### 6. Business Analysis
 
@@ -158,10 +150,7 @@ Validates staffing, departments, job roles, shifts, hours and overtime informati
 ### 06G — `06G_Maintenance_Logs_Cleaning`
 Validates maintenance activity, duration, severity, completion and inspection information.
 
-### 06H — `06H_Retail_Transactions_Cleaning`
-Cleans and validates the retail dataset. This dataset was ultimately not used in the final dashboard.
-
-### 06J — `06J_StoredProcedures_&_Views`
+### 06H — `06H_StoredProcedures_&_Views`
 Creates stored procedures and reusable analytical views used by later analysis and Power BI.
 
 ### 07A — `07A_Business_Analysis_Level1`
@@ -207,7 +196,7 @@ Performs decision-support analysis:
         ↓
 05 Create Relationships
         ↓
-06A–06J Cleaning / Views
+06A–06H Cleaning / Views
         ↓
 07A Business Analysis Level 1
         ↓
@@ -218,11 +207,6 @@ Performs decision-support analysis:
 Power BI Dashboard
 ```
 
-### SQL Script Sequence
-
-![SQL Script Sequence](assets/sql_script_sequence.png)
-
----
 
 # 📊 Dashboard Features
 
@@ -272,9 +256,7 @@ Provides a high-level overview of airport performance and the most important ope
 
 ### 📷 Dashboard Preview
 
-_Add the Page 1 screenshot here._
-
-![Page 1 Dashboard](assets/dashboard_page_1.png)
+![Page 1 Dashboard](Dashboard_Images/Executive_Overview.png)
 
 ---
 
@@ -304,9 +286,7 @@ Provides a deeper operational view focused on resource pressure, maintenance, ba
 
 ### 📷 Dashboard Preview
 
-_Add the Page 2 screenshot here._
-
-![Page 2 Dashboard](assets/dashboard_page_2.png)
+![Page 2 Dashboard](Dashboard_Images/Operational_Performance.png)
 
 ---
 
@@ -336,9 +316,7 @@ Analyzes passenger characteristics, passenger-service requirements, passenger ex
 
 ### 📷 Dashboard Preview
 
-_Add the Page 3 screenshot here._
-
-![Page 3 Dashboard](assets/dashboard_page_3.png)
+![Page 3 Dashboard](Dashboard_Images/Passengers_service_and_Travel_Routes.png)
 
 ---
 
