@@ -256,8 +256,6 @@ Provides a high-level overview of airport performance and the most important ope
 
 ### 📷 Dashboard Preview
 
-_Add the Page 1 screenshot here._
-
 ![Page 1 Dashboard](Dashboard_Images/Executive_Overview.png)
 
 ---
@@ -288,8 +286,6 @@ Provides a deeper operational view focused on resource pressure, maintenance, ba
 
 ### 📷 Dashboard Preview
 
-_Add the Page 2 screenshot here._
-
 ![Page 2 Dashboard](Dashboard_Images/Operational_Performance.png)
 
 ---
@@ -319,8 +315,6 @@ Analyzes passenger characteristics, passenger-service requirements, passenger ex
 - Which departments have higher overtime pressure?
 
 ### 📷 Dashboard Preview
-
-_Add the Page 3 screenshot here._
 
 ![Page 3 Dashboard](Dashboard_Images/Passengers_service_and_Travel_Routes.png)
 
